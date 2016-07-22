@@ -1,0 +1,39 @@
+//
+// Component: Column
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@column-gutter:                                 @global-grid-gutter;
+
+//
+// New
+//
+
+@column-gutter-large:                           @global-grid-gutter-large;
+
+
+// Component
+// ========================================================================
+
+.hook-column() {
+
+    // Large screen and bigger
+    @media (min-width: @breakpoint-xlarge) {
+
+        -webkit-column-gap: @column-gutter-large;
+        -moz-column-gap: @column-gutter-large;
+        column-gap: @column-gutter-large;
+
+    }
+
+}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-column-misc() {}
